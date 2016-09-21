@@ -2,8 +2,8 @@
 .git/
 .gitignore
 
-application/cache/*
-application/logs/
+application/cache/*.php
+application/logs/*.php
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*

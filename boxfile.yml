@@ -18,8 +18,8 @@ code.build:
 web.codeigniter:
   # starts PHP-FPM and Apache
   start:
-    fpm: /data/sbin/php-fpm -y /data/etc/php/php-fpm.conf -c /data/etc/php/php.ini
-    apache: /data/sbin/httpd -DNO_DETACH
+    fpm: start-php
+    apache: start-apache
   # pipes log output into your app's log stream
   log_watch:
     apache[access]: /data/var/log/apache/access.log
