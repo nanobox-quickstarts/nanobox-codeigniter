@@ -20,9 +20,6 @@ nanobox dev deploy
 # add a convenient way to access your app from the browser
 nanobox dev dns add codeigniter.nanobox.dev
 
-# console into dev environment
-nanobox dev console
-
 # run the app server (Apache & PHP-FPM) in the dev environment
 nanobox dev run
 ```
