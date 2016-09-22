@@ -11,14 +11,17 @@ git clone https://github.com/nanobox-quickstarts/nanobox-codeigniter.git
 # cd into the codeigniter app
 cd nanobox-codeigniter
 
-# build the code
+# build runtime and compile application
 nanobox build
 
-# start the dev environment
-nanobox dev start
+# deploy runtime to dev environment
+nanobox dev deploy
 
 # add a convenient way to access your app from the browser
 nanobox dev dns add codeigniter.nanobox.dev
+
+# console into dev environment
+nanobox dev console
 
 # run the app server (Apache & PHP-FPM) in the dev environment
 nanobox dev run
