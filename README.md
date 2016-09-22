@@ -1,4 +1,4 @@
-# CodeIgniter on Nanobox
+# CodeIgniter with Nanobox
 This is the companion application for the [CodeIgniter: Getting Started](https://guides.nanobox.io/codeigniter/) guide on [guides.nanobox.io](https://guides.nanobox.io) and is pre-configured and ready to run on [nanobox](https://nanobox.io/)!
 
 ## Up and Running
