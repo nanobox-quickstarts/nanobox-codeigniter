@@ -1,26 +1,30 @@
-code.build:
-  # the php engine provides the php runtime and associated executables
-  engine: php
-  config:
-    # tells nanobox to use php 7.0
-    runtime: php-7.0
-    # enables php extensions
-    extensions:
-      # required by composer
-      - phar
-      - filter
-      - json
-      - hash
-      - zip
-      - dom
+run.config:
+  # install php and associated runtimes
+  # engine: php
+  image: nanobox/build:beta
+  engine: php#feature/workflow-refactor
 
-# creates a web component in sim and production environments
-web.codeigniter:
-  # starts PHP-FPM and Apache
+  # php engine configuration (php version, extensions, etc)
+  engine.config:
+    # sets the php version to 7.0
+    runtime: php-7.0
+    extensions:
+      - mysqli
+
+# add a MySQL database
+data.db:
+  image: nanobox/mysql
+
+web.main:
   start:
+    nginx: start-apache
     fpm: start-php
-    apache: start-apache
-  # pipes log output into your app's log stream
+
+  # add writable dirs to your web component
+  writable_dirs:
+    - tmp/cache
+
+  # the path to a logfile you want streamed to the nanobox dashboard
   log_watch:
     apache[access]: /data/var/log/apache/access.log
     apache[error]: /data/var/log/apache/error.log

@@ -1,27 +1,49 @@
-# CodeIgniter with Nanobox
-This is the companion application for the [CodeIgniter: Getting Started](https://guides.nanobox.io/codeigniter/) guide on [guides.nanobox.io](https://guides.nanobox.io) and is pre-configured and ready to run with [Nanobox](https://nanobox.io/)!
+![CodeIgniter from scratch](https://guides.nanobox.io/assets/quickstart-icons/codeigniter.png)
 
-## Up and Running
+#### Clone the repo
 
-``` bash
-
+```bash
 # clone the code
 git clone https://github.com/nanobox-quickstarts/nanobox-codeigniter.git
 
 # cd into the codeigniter app
 cd nanobox-codeigniter
-
-# start the dev environment
-nanobox dev start
-
-# add a convenient way to access your app from the browser
-nanobox dev dns add codeigniter.nanobox.dev
-
-# run the app server (Apache & PHP-FPM) in the dev environment
-nanobox dev run
 ```
 
-Visit the app from your favorite browser at: `codeigniter.nanobox.dev:8080`
+#### Run the app
 
-### Now What?
-For more details about how this works or for more advanced topics related to running CodeIgniter applications with Nanobox, visit [guides.nanobox.io/codeigniter/](https://guides.nanobox.io/codeigniter/).
+```bash
+nanobox run php-server
+```
+
+#### Check it out
+
+```bash
+# Add a convenient way to access your app from the browser
+nanobox dns add local codeigniter.dev
+```
+
+Visit your app at <a href="http://codeigniter.dev" target="\_blank">codeigniter.dev</a>
+
+#### Explore
+With Nanobox, you have everything you need develop and run your codeigniter app:
+
+```bash
+# drop into a Nanobox console
+nanobox run
+
+# where php is installed,
+php -v
+
+# your packages are available,
+composer show
+
+# and your code is mounted
+ls
+
+# exit the console
+exit
+```
+
+#### Now What?
+For more details about running codeigniter apps with nanobox visit [guides.nanobox.io/php/codeigniter/](https://guides.nanobox.io/php/codeigniter/)
