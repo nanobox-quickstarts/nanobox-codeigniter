@@ -1,5 +1,4 @@
 run.config:
-  # install php and associated runtimes
   engine: php
 
   # php engine configuration (php version, extensions, etc)
