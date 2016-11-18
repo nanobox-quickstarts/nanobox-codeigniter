@@ -1,8 +1,6 @@
 run.config:
   # install php and associated runtimes
-  # engine: php
-  image: nanobox/build:beta
-  engine: php#feature/workflow-refactor
+  engine: php
 
   # php engine configuration (php version, extensions, etc)
   engine.config:
@@ -11,10 +9,11 @@ run.config:
     extensions:
       - mysqli
 
-# add a MySQL database
+# add a database
 data.db:
   image: nanobox/mysql
 
+# add a worker component and give it a "start" command
 web.main:
   start:
     nginx: start-apache
@@ -30,3 +29,7 @@ web.main:
     apache[error]: /data/var/log/apache/error.log
     php[error]: /data/var/log/php/php_error.log
     php[fpm]: /data/var/log/php/php_fpm.log
+
+# add a worker component and give it a "start" command
+# worker.main:
+#   start: php worker.php
