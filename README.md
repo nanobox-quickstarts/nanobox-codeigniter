@@ -1,6 +1,13 @@
 ![CodeIgniter from scratch](https://guides.nanobox.io/assets/quickstart-icons/codeigniter.png)
 
-#### Clone the repo
+# Codeigniter from scratch
+
+Run a Codeigniter app locally, install nothing besides nanobox. 
+
+<a href="https://nanobox.io/download"><img src="https://guides.nanobox.io/assets/quickstart-icons/download.png" /></a>
+
+
+## Clone the repo
 
 ```bash
 # clone the code
@@ -10,13 +17,13 @@ git clone https://github.com/nanobox-quickstarts/nanobox-codeigniter.git
 cd nanobox-codeigniter
 ```
 
-#### Run the app
+## Run the app
 
 ```bash
 nanobox run php-server
 ```
 
-#### Check it out
+## Check it out
 
 ```bash
 # Add a convenient way to access your app from the browser
@@ -25,7 +32,7 @@ nanobox dns add local codeigniter.dev
 
 Visit your app at <a href="http://codeigniter.dev" target="\_blank">codeigniter.dev</a>
 
-#### Explore
+## Explore
 With Nanobox, you have everything you need develop and run your codeigniter app:
 
 ```bash
@@ -45,5 +52,5 @@ ls
 exit
 ```
 
-#### Now What?
+## Now What?
 For more details about running codeigniter apps with nanobox visit [guides.nanobox.io/php/codeigniter/](https://guides.nanobox.io/php/codeigniter/)
