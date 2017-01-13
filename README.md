@@ -20,15 +20,15 @@ cd nanobox-codeigniter
 ## Run the app
 
 ```bash
+
+# Add a convenient way to access your app from the browser
+nanobox dns add local codeigniter.dev
+
+# Start PHP and Apache with the 'php-server' command
 nanobox run php-server
 ```
 
 ## Check it out
-
-```bash
-# Add a convenient way to access your app from the browser
-nanobox dns add local codeigniter.dev
-```
 
 Visit your app at <a href="http://codeigniter.dev" target="\_blank">codeigniter.dev</a>
 
