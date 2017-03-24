@@ -14,9 +14,7 @@ data.db:
 
 # add a worker component and give it a "start" command
 web.main:
-  start:
-    nginx: start-apache
-    fpm: start-php
+  start: php-server
 
   # add writable dirs to your web component
   writable_dirs:
